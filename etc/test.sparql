@@ -1,0 +1,23 @@
+PREFIX v:<http://www.w3.org/2006/vcard/ns#>
+PREFIX sp:<http://smartplatforms.org/terms#>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/>
+PREFIX spcode:<http://smartplatforms.org/terms/codes/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcterms:<http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?record
+WHERE {
+ ?problem sp:belongsTo ?record .
+ ?encounter sp:belongsTo ?record .
+ ?encounter sp:startDate ?date .
+ ?demo sp:belongsTo ?record .
+ ?demo foaf:gender ?gender .
+  ?demo foaf:birthday ?dob .
+ ?problem rdf:type sp:Problem .
+ ?problem sp:problemName ?problem_name_code .
+ ?problem_name_code dcterms:title ?title . 
+ ?problem_name_code sp:code ?code . 
+ ?code dcterms:identifier ?codeValue .
+
+ FILTER Regex(?codeValue,"E1[0-4]. ","i")}
+ ORDER BY ?encounter
