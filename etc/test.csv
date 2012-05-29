@@ -1,2 +1,2 @@
 hesid,sex,startage,Admission date,diag_1,diag1_str,diag_2,diag2_str,diag_3,diag3_str,diag_4,diag4_str,diag_5,diag5_str,diag_6,diag6_str,oper_1,oper_1str,op_dte_1,Admission method
-91850E921CB0DFCA8DCADA460264A2C0,2,42,06/06/2010,S2200,Fracture of thoracic vertebra,W179,,F102,Mental and behav dis due to use of alcohol: dependence synd,F412,Mixed anxiety and depressive disorder,Z915,Personal history of self-harm,,,U212,Computerised tomography NEC,06/06/2010,1
+101,2,42,06/06/2010,S2200,Fracture of thoracic vertebra,W179,,F102,Mental and behav dis due to use of alcohol: dependence synd,F412,Mixed anxiety and depressive disorder,Z915,Personal history of self-harm,,,U212,Computerised tomography NEC,06/06/2010,1
